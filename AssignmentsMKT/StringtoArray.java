@@ -4,29 +4,33 @@ public class StringtoArray
 {
 	public static void main(String[] args) 
 	{
-		int count_of_alpha=0;
-		int count_of_numeric=0;
-		String input="Food Court 360 ";
-		char c1[]= input.toCharArray();
+		String input="Food Court 360";
+		int alpha=0;
+		int numeric=0;
+		
+		char c1[]=input.toCharArray();
 		System.out.println(Arrays.toString(c1));
 		
-		for (int i=0; i<input.length();i++);
+		for (int i=0; i<input.length(); i++);
 		{
-			boolean b1=Character.isAlphabetic(c1[count_of_alpha]);
-			boolean b2=Character.isDigit(c1[count_of_numeric]);
+			int i = 0;
+			boolean b1=Character.isAlphabetic(c1[i]);
 			if(b1==true)
 			{
-				count_of_alpha++;
+				alpha++;
 			}
+			
+			boolean b2=Character.isDigit(c1[i]);
 			if(b2==true)
 			{
-				count_of_numeric++;
+				numeric++;
 			}
 		}
-		System.out.println(count_of_numeric);
-		System.out.println(count_of_alpha);
+		System.out.println(numeric);
+		System.out.println(alpha);
 		
 			
 	}
 
 }
+
