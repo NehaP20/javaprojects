@@ -9,10 +9,10 @@ public class Arrays_Program
 		name[1]="Shahrukh";
 		name[2]="Salman";
 		
-		for(int i=0;i<=2;i++)
+		/*for(int i=0;i<=2;i++)
 		{
 			System.out.println(name[i]);
-		}
+		}*/
 		 
 		System.out.println(Arrays.toString(name));
 		

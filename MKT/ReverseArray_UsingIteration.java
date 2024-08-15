@@ -1,6 +1,6 @@
-package AssignmentsMKT;
+package MKT;
 import java.util.Arrays;
-public class Array_usingIteration 
+public class ReverseArray_UsingIteration 
 {
 	public static void main(String[] args) 
 	{
@@ -15,7 +15,7 @@ public class Array_usingIteration
 		{
 			b[i] = a[i];
 		}
-		System.out.println(Arrays.toString(b));
+		System.out.println("B array is - "+ Arrays.toString(b));
 		
 		for(int j=2; j>=0 ; j--)
 		{
@@ -28,10 +28,10 @@ public class Array_usingIteration
 			}
 			else
 			{
-				System.out.print(",");
+				System.out.print(" ");
 			}
 		}
-	
+		
 	}
 
 }
